@@ -1,6 +1,5 @@
 import unittest
-from parameterized import parameterized
-import CeasarCipher
+from cesarCipher import CeasarCipher
 
 
 class TestCesarCipher(unittest.TestCase):
@@ -48,3 +47,7 @@ class TestCesarCipher(unittest.TestCase):
 
     def test_decodes_message_with_special_character(self):
         self.assertEqual(CeasarCipher.decode("Ij, ipx bsf zpv?", 1), "hi, how are you?")
+
+
+if __name__ == '__main__':
+    unittest.main()
